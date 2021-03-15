@@ -10,7 +10,7 @@ const Navbar = () => {
         </span>
         <span>
           <span>
-            <a href='http://localhost:3000/' className='navlink'>
+            <a href='https://tsflex.herokuapp.com/' className='navlink'>
               Home
             </a>
           </span>
@@ -20,9 +20,9 @@ const Navbar = () => {
             </a>
           </span>
           <span>
-            <a href='https://www.tensorflow.org/js/models' className='navlink'>
-              About
-            </a>
+            {/* <a href='https://www.tensorflow.org/js/models' className='navlink'> */}
+            About (Coming Soon)
+            {/* </a> */}
           </span>
         </span>
       </nav>
