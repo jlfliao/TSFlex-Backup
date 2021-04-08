@@ -87,12 +87,14 @@ class App extends React.Component {
       if (selectedOption === 'Face') {
         // console.log('inside if block of FACE');
         detectedInput = await neuralNetwork.estimateFaces(video);
+        console.log(detectedInput);
         drawFace(detectedInput, canvasContext, color, connected);
       }
 
       if (selectedOption === 'Objects') {
         // console.log('inside if block of OBJECTS');
         detectedInput = await neuralNetwork.detect(video);
+        console.log(detectedInput);
         drawOutline(detectedInput, canvasContext, color);
       }
     }
